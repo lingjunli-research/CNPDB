@@ -63,9 +63,10 @@ keep working. To stop a whole notification, delete or disable its workflow.
 
 The database-accuracy email reports only **new / not-yet-reviewed** issues. To
 stop being alerted about issues you've reviewed and accepted, run the
-**acknowledge-qc** workflow (Actions → acknowledge-qc → Run workflow). Leave the
-categories box blank to accept all current issues, or list specific categories
-(e.g. `missing_OS,missing_DOI`). Accepted issues are recorded in
+**acknowledge-qc** workflow (Actions → acknowledge-qc → Run workflow). In the
+categories box, list specific categories (e.g. `missing_OS,missing_DOI`) or type
+`ALL` to accept everything; leaving it blank acknowledges nothing (safe default).
+Accepted issues are recorded in
 `DataCuration/outputs/qc_acknowledged.csv` and won't trigger future emails.
 Nothing is acknowledged automatically.
 

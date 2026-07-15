@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       categories:
-        description: "QC categories to accept, comma-separated (e.g. missing_OS,missing_DOI). Leave BLANK to accept ALL currently-flagged issues -- use with care."
+        description: "QC categories to accept, comma-separated (e.g. missing_OS,missing_DOI). Type ALL to accept every currently-flagged issue. Leaving this blank acknowledges NOTHING (safe default)."
         required: false
         default: ""
 
@@ -43,6 +43,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing new to acknowledge."
           else
-            git commit -m "qc: acknowledge reviewed issues (${{ github.event.inputs.categories || 'all currently flagged' }})"
+            git commit -m "qc: acknowledge reviewed issues (${{ github.event.inputs.categories }})"
             git push
           fi

@@ -86,10 +86,11 @@ it so it stops showing up in every future alert:
   (matched by cNPDB ID + issue category). It ships with a couple of clearly-marked
   **example placeholder rows** that clear nothing — replace or ignore them.
 - **To acknowledge** (after review): Actions tab → **acknowledge-qc** → **Run
-  workflow**. Leave the *categories* box blank to accept **all** currently-flagged
-  issues (use carefully), or list specific ones like `missing_OS,missing_DOI` to
-  accept only those. It records them and commits the file; from then on, only
-  genuinely new issues trigger an email.
+  workflow**. In the *categories* box, list what to accept like
+  `missing_OS,missing_DOI`, or type `ALL` to accept everything. **Leaving it blank
+  acknowledges nothing** (a deliberate safety default, so you can't silence every
+  alert by accident). It records the choice and commits the file; from then on,
+  only genuinely new issues trigger an email.
 - **Nothing is acknowledged automatically** — it's always a deliberate human step.
 
 > Note: the ~250 issues currently in the database (mostly mass discrepancies and

@@ -92,6 +92,21 @@ def test_acknowledge_is_idempotent(tmp_path):
     assert len(qc_email.load_acknowledged(path)) == 1
 
 
+def test_resolve_categories_blank_is_none_sentinel():
+    # Blank must acknowledge NOTHING (safe default), not everything.
+    assert qc_email.resolve_categories("") == "NONE"
+    assert qc_email.resolve_categories("   ") == "NONE"
+
+
+def test_resolve_categories_all_means_every_category():
+    assert qc_email.resolve_categories("ALL") is None
+    assert qc_email.resolve_categories("all") is None
+
+
+def test_resolve_categories_specific_list():
+    assert qc_email.resolve_categories("missing_OS, missing_DOI") == ["missing_OS", "missing_DOI"]
+
+
 def test_seeded_examples_do_not_clear_real_issues(tmp_path):
     # The shipped placeholder rows use non-existent IDs, so they suppress nothing.
     seeded = {("9001", "missing_DOI"), ("9002", "missing_OS")}

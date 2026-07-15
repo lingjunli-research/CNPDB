@@ -114,6 +114,22 @@ def acknowledge(issues: pd.DataFrame, path: str = DEFAULT_ACK,
     return len(rows)
 
 
+def resolve_categories(raw: str):
+    """Interpret the acknowledge --categories value.
+
+    Returns ``"NONE"`` for blank (acknowledge nothing -- the safe default),
+    ``None`` for the literal ``ALL`` (acknowledge every category), or a list of
+    specific category names. Requiring an explicit ``ALL`` prevents accidentally
+    silencing every issue by leaving the box blank.
+    """
+    raw = (raw or "").strip()
+    if not raw:
+        return "NONE"
+    if raw.upper() == "ALL":
+        return None
+    return [c.strip() for c in raw.split(",") if c.strip()]
+
+
 def _today() -> str:
     from datetime import datetime
     return datetime.now().strftime("%Y-%m-%d")
@@ -137,8 +153,14 @@ def main(argv=None):
     issues = qc.run_all(db)
 
     if args.acknowledge:
-        cats = [c.strip() for c in args.categories.split(",") if c.strip()] or None
-        added = acknowledge(issues, args.acknowledged, cats,
+        sel = resolve_categories(args.categories)
+        if sel == "NONE":
+            print(0)  # blank = acknowledge nothing (safe default)
+            print("No categories given -- nothing acknowledged. List categories "
+                  "(e.g. missing_OS,missing_DOI), or pass --categories ALL to accept "
+                  "everything.", file=sys.stderr)
+            return 0
+        added = acknowledge(issues, args.acknowledged, sel,
                             args.by or "acknowledged via Actions", args.date or _today())
         print(added)  # number newly acknowledged
         return added
