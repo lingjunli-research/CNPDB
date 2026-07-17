@@ -121,6 +121,35 @@ def show_structure_pdb(pdb_path, width=350, height=250):
     html = view._make_html()
     components.html(html, height=height)
 
+import requests
+import hashlib
+
+ESMFOLD_API_URL = "https://api.esmatlas.com/foldSequence/v1/pdb/"
+ESM_CACHE_DIR = "Assets/3D Structure ESMFold_cache"
+os.makedirs(ESM_CACHE_DIR, exist_ok=True)
+
+@st.cache_data(show_spinner=False)
+def fetch_esmfold_pdb_path(raw_sequence: str):
+    """
+    Ensure a cached PDB exists for this raw sequence (calls the ESMFold API
+    only once per unique peptide, ever) and return its local path, or None.
+    """
+    seq = re.sub(r'[^A-Za-z]', '', str(raw_sequence)).upper()
+    if not seq or len(seq) > 400:
+        return None
+    cache_key = hashlib.md5(seq.encode()).hexdigest()
+    cache_path = os.path.join(ESM_CACHE_DIR, f"{cache_key}.pdb")
+    if os.path.exists(cache_path):
+        return cache_path
+    try:
+        resp = requests.post(ESMFOLD_API_URL, data=seq, timeout=60)
+        resp.raise_for_status()
+        with open(cache_path, "w") as f:
+            f.write(resp.text)
+        return cache_path
+    except requests.RequestException:
+        return None
+
 def img_html(path):
     """Return a base64 <img> tag filling 100% width of its container."""   
     if not os.path.exists(path):
@@ -340,14 +369,8 @@ def display_peptide_details(row: pd.Series):
             st.write("No AlphaFold-predicted 3D structure are available for this peptide")
 
          # Meta PDB file
-        if cNPDB_id <= 1000:
-            esm_folder = "Assets/3D Structure ESMFold 1_1000"
-        else:
-            esm_folder = "Assets/3D Structure ESMFold 1001_2000"
-        
-        meta_pdb_file = os.path.join(esm_folder, f"3D Meta cNP{cNPDB_id}.pdb")
-
-        if os.path.exists(meta_pdb_file):
+        meta_pdb_file = fetch_esmfold_pdb_path(row["Sequence"])
+        if meta_pdb_file:
             st.markdown("<div style='margin-top:10px;'></div>", unsafe_allow_html=True)
             st.markdown(
                 "<div style='text-align:center;font-weight:bold;color:#6a51a3;'>ESMFold-predicted 3D Structure</div>",
