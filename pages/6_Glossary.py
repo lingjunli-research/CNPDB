@@ -139,6 +139,7 @@ species = [
     ("Cpro", "<i>Cancer productus</i> – Red rock crab"),
     ("Csap", "<i>Callinectes sapidus</i> – Blue crab"),
     ("Dpu", "<i>Daphnia pulex</i> – Common water flea"),
+    ("Eis", "<i>Erimacrus isenbeckii</i> – horsehair crab"),
     ("Eur", "<i>Eurydice</i> – Sand burrowing isopods"),
     ("HoA", "<i>Homarus americanus</i> – American lobster"),
     ("Lma", "<i>Lithodes maja</i> – Norway king crab"),
