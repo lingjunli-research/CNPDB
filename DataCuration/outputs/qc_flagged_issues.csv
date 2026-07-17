@@ -1,11 +1,6 @@
 cNPDB ID,category,severity,detail
-894,duplicate,high,"Active Sequence='AWNKLQGAWamide' repeated across cNPDB IDs [894, 1564]"
-908,duplicate,high,"Active Sequence='SADWNKLRGAWamide' repeated across cNPDB IDs [908, 1562]"
-103,missing_OS,low,OS is blank
 121,missing_DOI,low,DOI is blank
 131,missing_OS,low,OS is blank
-132,missing_OS,low,OS is blank
-147,missing_OS,low,OS is blank
 195,missing_OS,low,OS is blank
 196,missing_OS,low,OS is blank
 199,missing_OS,low,OS is blank
@@ -15,13 +10,6 @@ cNPDB ID,category,severity,detail
 215,missing_OS,low,OS is blank
 216,missing_OS,low,OS is blank
 350,missing_DOI,low,DOI is blank
-384,missing_OS,low,OS is blank
-387,missing_OS,low,OS is blank
-391,missing_OS,low,OS is blank
-392,missing_OS,low,OS is blank
-393,missing_OS,low,OS is blank
-394,missing_OS,low,OS is blank
-395,missing_OS,low,OS is blank
 396,missing_OS,low,OS is blank
 399,missing_OS,low,OS is blank
 401,missing_OS,low,OS is blank

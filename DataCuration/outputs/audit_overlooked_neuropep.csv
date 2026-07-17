@@ -1,8 +1,19 @@
 Sequence,Species,OS_abbr,Family,Name,PMID
+KIFEPLR,Callinectes_sapidus,Csap,,,21740068.0
+KIFEPLRDKN,Callinectes_sapidus,Csap,,,21740068.0
+KIFEPLRDKNL,Callinectes_sapidus,Csap,,,22627023.0
 HLGSLYR,Callinectes_sapidus,Csap,,YRamide,22627023.0
+KIFEPLREDNL,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782
+YKIFEPL,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782
+YKIFEPLRESN,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782
+YKIFEPLRESNL,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782
 APGPYAFGL,Carcinus_maenas,Cmae,Allatostatin,Allatostatin A,19523386
 RVINDECPNLIGNRDLYKKVEWICEDCSNIFRKTGMASLCRRNCFFNEDFVWCVHATERSEELRDLEEWVGILGAGRD,Carcinus_maenas,Cmae,Arthropod CHH/MIH/GIH/VIH hormone,Molt-inhibiting hormone,1679945
 DARTPALRLRF,Carcinus_maenas,Cmae,FMRFamide related peptide,FMRFamide-like peptide,19523386
+KIFEPLR,Carcinus_maenas,Cmae,,,19523386
+KIFEPLRDKN,Carcinus_maenas,Cmae,,,19523386
+KIFEPLRDKNL,Carcinus_maenas,Cmae,,,19523386
+KIFEPLVA,Carcinus_maenas,Cmae,,,19523386
 DTGFAFSPRL,Carcinus_maenas,Cmae,Pyrokinin,Pyrokinin,19523386
 RSVEGVSRMEKLL,Homarus_americanus,HoA,Arthropod CHH/MIH/GIH/VIH hormone,CHH precursor-related peptide,20025296.0
 QVFDQACKGVYDRNLFKKLDRVCEDCYNLYRKPFVATTCRENCYSNWVFRQCLDDLLLSDVIDEYVSNVQMV,Homarus_americanus,HoA,Arthropod CHH/MIH/GIH/VIH hormone,Crustacean hyperglycemic hormone A,2169734.0

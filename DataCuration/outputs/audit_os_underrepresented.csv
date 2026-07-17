@@ -16,8 +16,6 @@ FTSKNYLRF,Callinectes_sapidus,Csap,FMRFamide related peptide,RFamide,21740068.0,
 GHRNFLRF,Callinectes_sapidus,Csap,FMRFamide related peptide,RFamide,21740068.0,os_partial,Cbo
 YGSDRNFLRF,Callinectes_sapidus,Csap,FMRFamide related peptide,RFamide,21740068.0,os_partial,Cbo
 GYNRSFLRF,Callinectes_sapidus,Csap,FMRFamide related peptide,FMRFamide-like neuropeptide,1815216.0,os_partial,Cbo;Spar
-KIFEPLR,Callinectes_sapidus,Csap,,,21740068.0,os_partial,Cmae
-KIFEPLRDKN,Callinectes_sapidus,Csap,,,21740068.0,os_partial,Cmae
 QLNFSPGW,Cancer_borealis,Cbo,AKH/HRTH/RPCH,Red pigment-concentrating hormone,18700782,os_partial,Csap;HoA;Spar
 NSELINSLLGISRLMNEA,Cancer_borealis,Cbo,Arthropod PDH,β-PDH,16214114,os_partial,Cpro
 TNRNFLRF,Cancer_borealis,Cbo,FMRFamide related peptide,FMRFamide-like neuropeptide 4,18700782,os_partial,Csap
@@ -25,10 +23,6 @@ GPRNFLRF,Cancer_borealis,Cbo,FMRFamide related peptide,RFamide,19185513,os_parti
 RSFLRF,Cancer_borealis,Cbo,FMRFamide related peptide,RFamide,18700782,os_partial,Cpro
 SDRNFLRF,Cancer_borealis,Cbo,FMRFamide related peptide,RFamide,18700782,os_partial,HoA
 SGRNFLRF,Cancer_borealis,Cbo,FMRFamide related peptide,RFamide,18700782,os_partial,HoA
-KIFEPLREDNL,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782,os_blank,
-YKIFEPL,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782,os_blank,
-YKIFEPLRESN,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782,os_blank,
-YKIFEPLRESNL,Cancer_borealis,Cbo,,Cryptocyanin fragments,18700782,os_blank,
 NFDEIDRSGFGFH,Cancer_borealis,Cbo,Orcokinin,Orcokinin,18700782,os_partial,HoA
 NFDEIDRSGFGFN,Cancer_borealis,Cbo,Orcokinin,Orcokinin,18700782,os_partial,Cmae;HoA;Pint
 NFDEIDRSSFA,Cancer_borealis,Cbo,Orcokinin,Orcokinin,16214114,os_partial,Cmae;Csap
@@ -81,7 +75,7 @@ VPNDWAHFRGSW,Litopenaeus_vannamei,Lva,Allatostatin,Allatostatin B,19852991.0,os_
 SENRNFLRF,Litopenaeus_vannamei,Lva,FMRFamide related peptide,FMRFamide-related peptide,19852991.0,os_partial,Cbo;Cmae;Csap;Spar
 GYRKPPFNGSIF,Litopenaeus_vannamei,Lva,FMRFamide related peptide,SIFamide,19852991.0,os_partial,Cbo;Cmae;Csap;Pint
 QDLDHVFLRF,Litopenaeus_vannamei,Lva,Myosuppressin,Myosuppressin,19852991.0,os_partial,Cbo;Cmae;Csap;HoA
-RYLPT,Litopenaeus_vannamei,Lva,,Proctolin,19852991.0,os_partial,Cbo;Cmae;Csap;HoA
+RYLPT,Litopenaeus_vannamei,Lva,,Proctolin,19852991.0,os_partial,Cbo;Cmae;Csap;Dpu;HoA
 SGFYANRY,Litopenaeus_vannamei,Lva,NPY,RYamide,19852991.0,os_partial,Cbo;Cmae;Csap
 EIDRSGFGFA,Litopenaeus_vannamei,Lva,Orcokinin,Orcokinin,19852991.0,os_partial,Cbo;Cmae;Csap
 NFDEIDRSGF,Litopenaeus_vannamei,Lva,Orcokinin,Orcokinin,19852991.0,os_partial,Cbo;Cmae;Csap;HoA
@@ -132,7 +126,7 @@ SKNYLRF,Ocypode_ceratophthalma,Oce,FMRFamide related peptide,FLP-extended-FLRFa,
 TNYGGFLRF,Ocypode_ceratophthalma,Oce,FMRFamide related peptide,FLP-extended-FLRFa,23298572,os_partial,Csap
 RKPPFNGSIF,Ocypode_ceratophthalma,Oce,FMRFamide related peptide,SIFamide,23298572,os_partial,Cbo;Cmae;HoA;Lva
 QDLDHVFLRF,Ocypode_ceratophthalma,Oce,Myosuppressin,Myosuppressin,23298572,os_partial,Cbo;Cmae;Csap;HoA
-RYLPT,Ocypode_ceratophthalma,Oce,,Proctolin,23298572,os_partial,Cbo;Cmae;Csap;HoA
+RYLPT,Ocypode_ceratophthalma,Oce,,Proctolin,23298572,os_partial,Cbo;Cmae;Csap;Dpu;HoA
 HIGSLYR,Ocypode_ceratophthalma,Oce,,YRamide,23298572,os_partial,Cbo;Cmae;Csap;HoA;Spar
 PSLRLRF,Ocypode_ceratophthalma,Oce,NPY,Short neuropeptide F,23298572,os_partial,Cbo;Cmae;HoA;Lva
 PSMRLRF,Ocypode_ceratophthalma,Oce,NPY,Short neuropeptide F,23298572,os_partial,Cbo;Cmae;Csap;Lva
