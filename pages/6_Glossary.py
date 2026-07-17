@@ -81,8 +81,9 @@ tissues = [
 ]
 
 families = [
+    ("ACP",   "Adipokinetic hormone/Corazonin-related peptide"),
+    ("ALP",   "Agatoxin-like peptide"),
     ("CCAP",   "Crustacean Cardioactive Peptide"),
-    ("CCAP_PRP",   "Crustacean Cardioactive Peptide Precursor Related Peptide"),
     ("CHH",    "Crustacean Hyperglycemic Hormone"),
     ("CP2",    "Cerebral peptide 2"),
     ("CPRP",   "Crustacean hyperglycemic hormone Precursor Related Peptide"),
@@ -94,8 +95,9 @@ families = [
     ("ILP",     "Insulin-like Peptide"),
     ("MIH",    "Molt Inhibiting Hormone"),
     ("MOIH",   "Mandibular Organ Inhibiting Hormone"),
+    ("NPF",    "Meuropeptide F"),
     ("PDH",    "Pigment Dispersing Hormone"),
-    ("RFamide_PRP",   "RFamide Precursor Related Peptide"),
+    ("PRP",   "Precursor Related Peptide"),
     ("RPCH",   "Red Pigment Concentrating Hormone"),
     ("sNPF",   "short Neuropeptide F"),
 ]
