@@ -5,8 +5,8 @@
 #
 # Add real addresses below, e.g.:
 
-lingjun.li@wisc.edu
+# lingjun.li@wisc.edu
 vungochuong.tran@wisc.edu
-tuduong@wisc.edu
-kgselby@wisc.edu
-lfields2@uw.edu
+# tuduong@wisc.edu
+# kgselby@wisc.edu
+# lfields2@uw.edu
