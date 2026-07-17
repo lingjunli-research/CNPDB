@@ -1,174 +1,11 @@
 cNPDB ID,category,severity,detail
-1376,inline_modification_in_Sequence,high,Sequence contains inline annotation ['(d)'] -> corrupts length/FASTA/property calc; move to PTM column. seq='QVF(d)DQACKGVYDRNLFKKLDRVCEDCYNLYRKPFVATTCRENCYSNWVFRQCLDDLLLSDVIDEYVSNVQMVGK'
-1377,inline_modification_in_Sequence,high,Sequence contains inline annotation ['(d)'] -> corrupts length/FASTA/property calc; move to PTM column. seq='QVF(d)DQACKGVYDRNLFKKLNRVCEDCYNLYRKPFIVTTCRENCYSNRVFRQCLDDLLMIDVIDEYVSNVQMVGK'
-1378,inline_modification_in_Sequence,high,Sequence contains inline annotation ['(d)'] -> corrupts length/FASTA/property calc; move to PTM column. seq='QVF(d)DQACKGVYDRNLFKKLNRVCEDCYNLYRKPFIVTTCRQNCFEGDTFPRCVMDLGLDLELFLEFRDMIK'
-20,mass_discrepancy,medium,stored=778.37708 theo[M+H]+=777.393 d=0.984Da (check PTM handling); offset_from_unmodified=-18.01; PTM='Amidation; Pyro-Glu from E'
-141,mass_discrepancy,medium,stored=2173.21 theo[M+H]+=2173.1229 d=0.087Da (check PTM handling); offset_from_unmodified=-0.897; PTM='Amidation'
-161,mass_discrepancy,medium,stored=1253.58578 theo[M+H]+=1252.5858 d=1.0Da (check PTM handling); offset_from_unmodified=0.016; PTM='Amidation'
-162,mass_discrepancy,medium,stored=1253.62 theo[M+H]+=1253.5698 d=0.05Da (check PTM handling); offset_from_unmodified=-0.934; PTM='Amidation'
-174,mass_discrepancy,high,stored=1447.76 theo[M+H]+=1278.6378 d=169.122Da (likely sequence/mass pairing error); offset_from_unmodified=168.138; PTM='Amidation'
-176,mass_discrepancy,high,stored=1504.8 theo[M+H]+=1335.6593 d=169.141Da (likely sequence/mass pairing error); offset_from_unmodified=168.157; PTM='Amidation'
-178,mass_discrepancy,high,stored=1648.8 theo[M+H]+=1479.7128 d=169.087Da (likely sequence/mass pairing error); offset_from_unmodified=168.103; PTM='Amidation'
-179,mass_discrepancy,medium,stored=1728.04 theo[M+H]+=1699.9253 d=28.115Da (check PTM handling); offset_from_unmodified=27.131; PTM='Amidation'
-187,mass_discrepancy,medium,stored=1650.7192 theo[M+H]+=1652.7348 d=1.008Da (check PTM handling); offset_from_unmodified=-3.0; PTM='Amidation'
-192,mass_discrepancy,medium,stored=956.37532 theo[M+H]+=958.391 d=1.008Da (check PTM handling); offset_from_unmodified=-3.0; PTM='Amidation'
-196,mass_discrepancy,medium,stored=8419.8194 theo[M+H]+=8436.8458 d=16.019Da (check PTM handling); offset_from_unmodified=-18.01; PTM='Amidation'
-237,mass_discrepancy,medium,stored=1234.57 theo[M+H]+=1234.646 d=0.076Da (check PTM handling); offset_from_unmodified=-0.076; PTM=nan
-242,mass_discrepancy,medium,stored=1300.6 theo[M+H]+=1300.6532 d=0.053Da (check PTM handling); offset_from_unmodified=-0.053; PTM=nan
-246,mass_discrepancy,medium,stored=1329.71 theo[M+H]+=1329.7624 d=0.052Da (check PTM handling); offset_from_unmodified=-0.052; PTM=nan
-248,mass_discrepancy,high,stored=1346.66 theo[M+H]+=1289.6583 d=57.002Da (likely sequence/mass pairing error); offset_from_unmodified=57.002; PTM=nan
-253,mass_discrepancy,medium,stored=1377.6 theo[M+H]+=1377.7008 d=0.101Da (check PTM handling); offset_from_unmodified=-0.101; PTM=nan
-255,mass_discrepancy,medium,stored=1390.69 theo[M+H]+=1390.7471 d=0.057Da (check PTM handling); offset_from_unmodified=-0.057; PTM=nan
-265,mass_discrepancy,medium,stored=1501.66 theo[M+H]+=1501.7281 d=0.068Da (check PTM handling); offset_from_unmodified=-0.068; PTM=nan
-266,mass_discrepancy,medium,stored=1503.83 theo[M+H]+=1475.7999 d=28.03Da (check PTM handling); offset_from_unmodified=28.03; PTM=nan
-272,mass_discrepancy,high,stored=1552.83 theo[M+H]+=1493.7529 d=59.077Da (likely sequence/mass pairing error); offset_from_unmodified=59.077; PTM=nan
-277,mass_discrepancy,medium,stored=1592.7 theo[M+H]+=1592.7914 d=0.091Da (check PTM handling); offset_from_unmodified=-0.091; PTM=nan
-280,mass_discrepancy,medium,stored=1621.75 theo[M+H]+=1621.8432 d=0.093Da (check PTM handling); offset_from_unmodified=-0.093; PTM=nan
-283,mass_discrepancy,medium,stored=1646.78 theo[M+H]+=1646.9363 d=0.156Da (check PTM handling); offset_from_unmodified=-0.156; PTM=nan
-286,mass_discrepancy,medium,stored=1673.68 theo[M+H]+=1673.7765 d=0.097Da (check PTM handling); offset_from_unmodified=-0.097; PTM=nan
-287,mass_discrepancy,medium,stored=1685.75 theo[M+H]+=1685.8129 d=0.063Da (check PTM handling); offset_from_unmodified=-0.063; PTM=nan
-289,mass_discrepancy,medium,stored=1734.98 theo[M+H]+=1734.9272 d=0.053Da (check PTM handling); offset_from_unmodified=0.053; PTM=nan
-292,mass_discrepancy,medium,stored=1771.87 theo[M+H]+=1801.8789 d=29.002Da (check PTM handling); offset_from_unmodified=-30.009; PTM=nan
-296,mass_discrepancy,medium,stored=1846.74 theo[M+H]+=1846.8817 d=0.142Da (check PTM handling); offset_from_unmodified=-0.142; PTM=nan
-297,mass_discrepancy,medium,stored=1847.79 theo[M+H]+=1847.8406 d=0.051Da (check PTM handling); offset_from_unmodified=-0.051; PTM=nan
-301,mass_discrepancy,medium,stored=1885.93 theo[M+H]+=1915.9218 d=28.985Da (check PTM handling); offset_from_unmodified=-29.992; PTM=nan
-302,mass_discrepancy,medium,stored=1886.81 theo[M+H]+=1886.8879 d=0.078Da (check PTM handling); offset_from_unmodified=-0.078; PTM=nan
-303,mass_discrepancy,medium,stored=1945.88 theo[M+H]+=1945.9501 d=0.07Da (check PTM handling); offset_from_unmodified=-0.07; PTM=nan
-305,mass_discrepancy,medium,stored=1972.89 theo[M+H]+=1972.961 d=0.071Da (check PTM handling); offset_from_unmodified=-0.071; PTM=nan
-307,mass_discrepancy,medium,stored=2033.86 theo[M+H]+=2033.941 d=0.081Da (check PTM handling); offset_from_unmodified=-0.081; PTM=nan
-308,mass_discrepancy,medium,stored=2047.89 theo[M+H]+=2047.9567 d=0.067Da (check PTM handling); offset_from_unmodified=-0.067; PTM=nan
-309,mass_discrepancy,medium,stored=2058.98 theo[M+H]+=2059.0342 d=0.054Da (check PTM handling); offset_from_unmodified=-0.054; PTM=nan
-312,mass_discrepancy,medium,stored=2060.81 theo[M+H]+=2060.9519 d=0.142Da (check PTM handling); offset_from_unmodified=-0.142; PTM=nan
-315,mass_discrepancy,medium,stored=2121.97 theo[M+H]+=2122.0557 d=0.086Da (check PTM handling); offset_from_unmodified=-0.086; PTM=nan
-316,mass_discrepancy,medium,stored=2146.89 theo[M+H]+=2147.0251 d=0.135Da (check PTM handling); offset_from_unmodified=-0.135; PTM=nan
-317,mass_discrepancy,medium,stored=2147.87 theo[M+H]+=2147.984 d=0.114Da (check PTM handling); offset_from_unmodified=-0.114; PTM=nan
-318,mass_discrepancy,medium,stored=2171.98 theo[M+H]+=2172.1183 d=0.138Da (check PTM handling); offset_from_unmodified=-0.138; PTM=nan
-321,mass_discrepancy,medium,stored=2215.84 theo[M+H]+=2216.1305 d=0.291Da (check PTM handling); offset_from_unmodified=-0.291; PTM=nan
-323,mass_discrepancy,medium,stored=2260.97 theo[M+H]+=2261.068 d=0.098Da (check PTM handling); offset_from_unmodified=-0.098; PTM=nan
-324,mass_discrepancy,medium,stored=2286.04 theo[M+H]+=2286.1612 d=0.121Da (check PTM handling); offset_from_unmodified=-0.121; PTM=nan
-325,mass_discrepancy,medium,stored=2289.06 theo[M+H]+=2289.1357 d=0.076Da (check PTM handling); offset_from_unmodified=-0.076; PTM=nan
-326,mass_discrepancy,medium,stored=2300.14 theo[M+H]+=2300.2132 d=0.073Da (check PTM handling); offset_from_unmodified=-0.073; PTM=nan
-328,mass_discrepancy,medium,stored=2379.04 theo[M+H]+=2379.1939 d=0.154Da (check PTM handling); offset_from_unmodified=-0.154; PTM=nan
-329,mass_discrepancy,medium,stored=2388.11 theo[M+H]+=2388.2041 d=0.094Da (check PTM handling); offset_from_unmodified=-0.094; PTM=nan
-330,mass_discrepancy,medium,stored=2414.17 theo[M+H]+=2414.2562 d=0.086Da (check PTM handling); offset_from_unmodified=-0.086; PTM=nan
-331,mass_discrepancy,medium,stored=2444.17 theo[M+H]+=2444.249 d=0.079Da (check PTM handling); offset_from_unmodified=-0.079; PTM=nan
-332,mass_discrepancy,medium,stored=2490.22 theo[M+H]+=2490.3054 d=0.085Da (check PTM handling); offset_from_unmodified=-0.085; PTM=nan
-333,mass_discrepancy,medium,stored=2502.18 theo[M+H]+=2502.2471 d=0.067Da (check PTM handling); offset_from_unmodified=-0.067; PTM=nan
-334,mass_discrepancy,high,stored=2517.33 theo[M+H]+=2354.2721 d=163.058Da (likely sequence/mass pairing error); offset_from_unmodified=163.058; PTM=nan
-336,mass_discrepancy,medium,stored=2543.23 theo[M+H]+=2543.2987 d=0.069Da (check PTM handling); offset_from_unmodified=-0.069; PTM=nan
-337,mass_discrepancy,medium,stored=2547.18 theo[M+H]+=2547.3269 d=0.147Da (check PTM handling); offset_from_unmodified=-0.147; PTM=nan
-338,mass_discrepancy,medium,stored=2577.22 theo[M+H]+=2577.2937 d=0.074Da (check PTM handling); offset_from_unmodified=-0.074; PTM=nan
-339,mass_discrepancy,medium,stored=2648.09 theo[M+H]+=2648.2872 d=0.197Da (check PTM handling); offset_from_unmodified=-0.197; PTM=nan
-340,mass_discrepancy,medium,stored=2650.25 theo[M+H]+=2650.3471 d=0.097Da (check PTM handling); offset_from_unmodified=-0.097; PTM=nan
-342,mass_discrepancy,high,stored=2674.24 theo[M+H]+=2762.3301 d=87.083Da (likely sequence/mass pairing error); offset_from_unmodified=-88.09; PTM=nan
-343,mass_discrepancy,medium,stored=2724.24 theo[M+H]+=2724.3621 d=0.122Da (check PTM handling); offset_from_unmodified=-0.122; PTM=nan
-344,mass_discrepancy,medium,stored=2763.35 theo[M+H]+=2763.4311 d=0.081Da (check PTM handling); offset_from_unmodified=-0.081; PTM=nan
-346,mass_discrepancy,medium,stored=2837.35 theo[M+H]+=2837.4462 d=0.096Da (check PTM handling); offset_from_unmodified=-0.096; PTM=nan
-347,mass_discrepancy,medium,stored=2992.47 theo[M+H]+=2992.5772 d=0.107Da (check PTM handling); offset_from_unmodified=-0.107; PTM=nan
-351,mass_discrepancy,medium,stored=3388.62 theo[M+H]+=3388.7053 d=0.085Da (check PTM handling); offset_from_unmodified=-0.085; PTM=nan
-352,mass_discrepancy,medium,stored=3391.54 theo[M+H]+=3391.6546 d=0.115Da (check PTM handling); offset_from_unmodified=-0.115; PTM=nan
-353,mass_discrepancy,medium,stored=3430.7 theo[M+H]+=3430.7635 d=0.063Da (check PTM handling); offset_from_unmodified=-0.063; PTM=nan
-354,mass_discrepancy,medium,stored=3460.56 theo[M+H]+=3460.7563 d=0.196Da (check PTM handling); offset_from_unmodified=-0.196; PTM=nan
-355,mass_discrepancy,medium,stored=3490.63 theo[M+H]+=3490.7231 d=0.093Da (check PTM handling); offset_from_unmodified=-0.093; PTM=nan
-435,mass_discrepancy,medium,stored=1503.68 theo[M+H]+=1517.6907 d=13.003Da (check PTM handling); offset_from_unmodified=-14.011; PTM=nan
-445,mass_discrepancy,medium,stored=1062.5578 theo[M+H]+=1061.5738 d=0.984Da (check PTM handling); offset_from_unmodified=-0.0; PTM='Amidation'
-491,mass_discrepancy,medium,stored=866.56 theo[M+H]+=865.5155 d=1.044Da (check PTM handling); offset_from_unmodified=0.06; PTM='Amidation'
-504,mass_discrepancy,high,stored=938.56 theo[M+H]+=1051.6159 d=112.049Da (likely sequence/mass pairing error); offset_from_unmodified=-114.04; PTM='Amidation'
-513,mass_discrepancy,medium,stored=977.49 theo[M+H]+=977.5679 d=0.078Da (check PTM handling); offset_from_unmodified=-1.062; PTM='Amidation'
-518,mass_discrepancy,medium,stored=1007.56 theo[M+H]+=978.5996 d=28.96Da (check PTM handling); offset_from_unmodified=27.976; PTM='Amidation'
-533,mass_discrepancy,medium,stored=1058.58 theo[M+H]+=1029.5992 d=28.981Da (check PTM handling); offset_from_unmodified=27.997; PTM='Amidation'
-537,mass_discrepancy,medium,stored=1066.6 theo[M+H]+=1038.5731 d=28.027Da (check PTM handling); offset_from_unmodified=27.043; PTM='Amidation'
-540,mass_discrepancy,medium,stored=1078.6 theo[M+H]+=1050.6095 d=27.991Da (check PTM handling); offset_from_unmodified=27.007; PTM='Amidation'
-542,mass_discrepancy,medium,stored=1090.66 theo[M+H]+=1061.6254 d=29.035Da (check PTM handling); offset_from_unmodified=28.051; PTM='Amidation'
-549,mass_discrepancy,medium,stored=1106.62 theo[M+H]+=1078.6268 d=27.993Da (check PTM handling); offset_from_unmodified=27.009; PTM='Amidation'
-560,mass_discrepancy,medium,stored=1134.68 theo[M+H]+=1106.6105 d=28.069Da (check PTM handling); offset_from_unmodified=27.085; PTM='Amidation'
-566,mass_discrepancy,medium,stored=1147.62 theo[M+H]+=1118.6581 d=28.962Da (check PTM handling); offset_from_unmodified=27.978; PTM='Amidation'
-574,mass_discrepancy,medium,stored=1164.58 theo[M+H]+=1136.6323 d=27.948Da (check PTM handling); offset_from_unmodified=26.964; PTM='Amidation'
-579,mass_discrepancy,medium,stored=1176.6 theo[M+H]+=1147.6371 d=28.963Da (check PTM handling); offset_from_unmodified=27.979; PTM='Amidation'
-580,mass_discrepancy,medium,stored=1177.62 theo[M+H]+=1148.6687 d=28.951Da (check PTM handling); offset_from_unmodified=27.967; PTM='Amidation'
-582,mass_discrepancy,medium,stored=1207.64 theo[M+H]+=1179.6745 d=27.965Da (check PTM handling); offset_from_unmodified=26.981; PTM='Amidation'
-585,mass_discrepancy,medium,stored=1214.62 theo[M+H]+=1186.6367 d=27.983Da (check PTM handling); offset_from_unmodified=26.999; PTM='Amidation'
-590,mass_discrepancy,medium,stored=1253.72 theo[M+H]+=1253.6538 d=0.066Da (check PTM handling); offset_from_unmodified=-0.918; PTM='Amidation'
-591,mass_discrepancy,medium,stored=1257.68 theo[M+H]+=1229.6313 d=28.049Da (check PTM handling); offset_from_unmodified=27.065; PTM='Amidation'
-593,mass_discrepancy,medium,stored=1264.66 theo[M+H]+=1236.696 d=27.964Da (check PTM handling); offset_from_unmodified=26.98; PTM='Amidation'
-594,mass_discrepancy,medium,stored=1271.64 theo[M+H]+=1272.7211 d=0.074Da (check PTM handling); offset_from_unmodified=-2.065; PTM='Amidation'
-597,mass_discrepancy,medium,stored=1271.774 theo[M+H]+=1272.7211 d=0.06Da (check PTM handling); offset_from_unmodified=-1.931; PTM='Amidation'
-598,mass_discrepancy,medium,stored=1272.7146 theo[M+H]+=1272.612 d=0.103Da (check PTM handling); offset_from_unmodified=-17.908; PTM='Amidation; Pyro-Gln from Q'
-600,mass_discrepancy,medium,stored=1273.66 theo[M+H]+=1244.715 d=28.945Da (check PTM handling); offset_from_unmodified=27.961; PTM='Amidation'
-604,mass_discrepancy,medium,stored=1288.81 theo[M+H]+=1260.7324 d=28.078Da (check PTM handling); offset_from_unmodified=27.094; PTM='Amidation'
-608,mass_discrepancy,medium,stored=1313.74 theo[M+H]+=1285.7164 d=28.024Da (check PTM handling); offset_from_unmodified=27.04; PTM='Amidation'
-625,mass_discrepancy,medium,stored=982.56 theo[M+H]+=954.5156 d=28.044Da (check PTM handling); offset_from_unmodified=27.06; PTM='Amidation'
-628,mass_discrepancy,medium,stored=1003.52 theo[M+H]+=975.5047 d=28.015Da (check PTM handling); offset_from_unmodified=27.031; PTM='Amidation'
-634,mass_discrepancy,medium,stored=1117.58 theo[M+H]+=1089.5476 d=28.032Da (check PTM handling); offset_from_unmodified=27.048; PTM='Amidation'
-635,mass_discrepancy,medium,stored=1171.56 theo[M+H]+=1143.5582 d=28.002Da (check PTM handling); offset_from_unmodified=27.018; PTM='Amidation'
-636,mass_discrepancy,medium,stored=1257.7 theo[M+H]+=1227.6593 d=30.041Da (check PTM handling); offset_from_unmodified=29.057; PTM='Amidation'
-637,mass_discrepancy,high,stored=2091.76 theo[M+H]+=685.3416 d=1406.418Da (likely sequence/mass pairing error); offset_from_unmodified=1405.434; PTM='Amidation'
-652,mass_discrepancy,medium,stored=1396.5286 theo[M+H]+=1395.5092 d=1.019Da (check PTM handling); offset_from_unmodified=79.992; PTM='Amidation; Sulfation'
-681,mass_discrepancy,medium,stored=1031.45818 theo[M+H]+=1030.4741 d=0.984Da (check PTM handling); offset_from_unmodified=-18.011; PTM='Amidation; Pyro-Glu from E'
-846,mass_discrepancy,high,stored=957.3325 theo[M+H]+=1037.2888 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.001; PTM='Sulfation'
-847,mass_discrepancy,high,stored=3883.7826 theo[M+H]+=3963.7388 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.001; PTM='Sulfation'
-848,mass_discrepancy,high,stored=3657.9127 theo[M+H]+=3737.869 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.0; PTM='Sulfation'
-849,mass_discrepancy,high,stored=3414.4483 theo[M+H]+=3494.4046 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.001; PTM='Sulfation'
-850,mass_discrepancy,high,stored=1349.5497 theo[M+H]+=1429.506 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.001; PTM='Sulfation'
-851,mass_discrepancy,high,stored=1478.5923 theo[M+H]+=1558.5486 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.001; PTM='Sulfation'
-852,mass_discrepancy,high,stored=6030.8155 theo[M+H]+=6110.7717 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.001; PTM='Sulfation'
-853,mass_discrepancy,high,stored=1679.8062 theo[M+H]+=1759.7625 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=-0.984; PTM='Amidation; Sulfation'
-854,mass_discrepancy,high,stored=2392.0733 theo[M+H]+=2472.0296 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.001; PTM='Sulfation'
-892,mass_discrepancy,medium,stored=1333.58755 theo[M+H]+=1318.5766 d=15.011Da (check PTM handling); offset_from_unmodified=31.006; PTM='Oxidation'
-939,mass_discrepancy,high,stored=8277.98507 theo[M+H]+=2248.1066 d=6029.878Da (likely sequence/mass pairing error); offset_from_unmodified=6029.878; PTM=nan
-941,mass_discrepancy,medium,stored=9220.32666 theo[M+H]+=9259.3123 d=37.978Da (check PTM handling); offset_from_unmodified=-38.986; PTM=nan
-977,mass_discrepancy,medium,stored=1472.69176 theo[M+H]+=1442.8702 d=29.822Da (check PTM handling); offset_from_unmodified=28.837; PTM='Amidation'
-978,mass_discrepancy,high,stored=1326.62267 theo[M+H]+=1454.6811 d=127.051Da (likely sequence/mass pairing error); offset_from_unmodified=-147.053; PTM='Amidation; Pyro-Glu from E'
-1162,mass_discrepancy,high,stored=1031.45818 theo[M+H]+=753.36 d=278.098Da (likely sequence/mass pairing error); offset_from_unmodified=277.114; PTM='Amidation'
-1241,mass_discrepancy,medium,stored=1351.57025 theo[M+H]+=1350.5862 d=0.984Da (check PTM handling); offset_from_unmodified=-18.011; PTM='Amidation; Pyro-Glu from E'
-1271,mass_discrepancy,high,stored=1330.6903 theo[M+H]+=1233.6375 d=97.053Da (likely sequence/mass pairing error); offset_from_unmodified=79.042; PTM='Amidation; Pyro-Gln from Q'
-1276,mass_discrepancy,high,stored=1345.56305 theo[M+H]+=1425.5198 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=15.011; PTM='Amidation; Sulfation; Oxidation'
-1290,mass_discrepancy,high,stored=7927.34761 theo[M+H]+=6998.9944 d=928.353Da (likely sequence/mass pairing error); offset_from_unmodified=928.353; PTM=nan
-1344,mass_discrepancy,high,stored=3945.38766 theo[M+H]+=3865.4308 d=79.957Da (likely sequence/mass pairing error); offset_from_unmodified=159.914; PTM='Sulfation'
-1372,mass_discrepancy,high,stored=5784.80997 theo[M+H]+=5621.7465 d=163.063Da (likely sequence/mass pairing error); offset_from_unmodified=243.02; PTM='Sulfation'
-1411,mass_discrepancy,high,stored=3610.36932 theo[M+H]+=3530.4125 d=79.957Da (likely sequence/mass pairing error); offset_from_unmodified=159.914; PTM='Sulfation'
-1420,mass_discrepancy,medium,stored=765.32029 theo[M+H]+=764.3362 d=0.984Da (check PTM handling); offset_from_unmodified=-18.01; PTM='Amidation; Pyro-Glu from E'
-1447,mass_discrepancy,medium,stored=6792.42024 theo[M+H]+=6791.4361 d=0.984Da (check PTM handling); offset_from_unmodified=0.0; PTM='Amidation'
-1475,mass_discrepancy,high,stored=1738.70388 theo[M+H]+=1818.6606 d=78.949Da (likely sequence/mass pairing error); offset_from_unmodified=0.0; PTM='Sulfation'
-1495,mass_discrepancy,high,stored=1206.49973 theo[M+H]+=868.4199 d=338.08Da (likely sequence/mass pairing error); offset_from_unmodified=337.096; PTM='Amidation'
-1501,mass_discrepancy,high,stored=975.42659 theo[M+H]+=1539.6333 d=563.199Da (likely sequence/mass pairing error); offset_from_unmodified=-564.207; PTM=nan
-13,missing_OS,low,OS is blank
-23,missing_OS,low,OS is blank
-31,missing_OS,low,OS is blank
-32,missing_OS,low,OS is blank
-40,missing_OS,low,OS is blank
-47,missing_OS,low,OS is blank
-50,missing_OS,low,OS is blank
-54,missing_OS,low,OS is blank
-60,missing_OS,low,OS is blank
-64,missing_OS,low,OS is blank
-65,missing_OS,low,OS is blank
-68,missing_OS,low,OS is blank
-70,missing_OS,low,OS is blank
-74,missing_OS,low,OS is blank
-80,missing_OS,low,OS is blank
-81,missing_OS,low,OS is blank
-82,missing_OS,low,OS is blank
-85,missing_OS,low,OS is blank
-86,missing_OS,low,OS is blank
-90,missing_OS,low,OS is blank
-100,missing_OS,low,OS is blank
+894,duplicate,high,"Active Sequence='AWNKLQGAWamide' repeated across cNPDB IDs [894, 1564]"
+908,duplicate,high,"Active Sequence='SADWNKLRGAWamide' repeated across cNPDB IDs [908, 1562]"
 103,missing_OS,low,OS is blank
-109,missing_OS,low,OS is blank
-115,missing_OS,low,OS is blank
-116,missing_OS,low,OS is blank
-117,missing_OS,low,OS is blank
 121,missing_DOI,low,DOI is blank
-128,missing_OS,low,OS is blank
 131,missing_OS,low,OS is blank
 132,missing_OS,low,OS is blank
-135,missing_OS,low,OS is blank
-138,missing_OS,low,OS is blank
-144,missing_OS,low,OS is blank
 147,missing_OS,low,OS is blank
-189,missing_OS,low,OS is blank
-190,missing_OS,low,OS is blank
-191,missing_OS,low,OS is blank
 195,missing_OS,low,OS is blank
 196,missing_OS,low,OS is blank
 199,missing_OS,low,OS is blank
@@ -177,8 +14,6 @@ cNPDB ID,category,severity,detail
 213,missing_OS,low,OS is blank
 215,missing_OS,low,OS is blank
 216,missing_OS,low,OS is blank
-274,missing_OS,low,OS is blank
-278,missing_OS,low,OS is blank
 350,missing_DOI,low,DOI is blank
 384,missing_OS,low,OS is blank
 387,missing_OS,low,OS is blank
@@ -188,64 +23,28 @@ cNPDB ID,category,severity,detail
 394,missing_OS,low,OS is blank
 395,missing_OS,low,OS is blank
 396,missing_OS,low,OS is blank
-398,missing_OS,low,OS is blank
 399,missing_OS,low,OS is blank
-400,missing_OS,low,OS is blank
 401,missing_OS,low,OS is blank
 402,missing_OS,low,OS is blank
 404,missing_OS,low,OS is blank
-429,missing_OS,low,OS is blank
-440,missing_OS,low,OS is blank
-452,missing_OS,low,OS is blank
-453,missing_OS,low,OS is blank
-454,missing_OS,low,OS is blank
-455,missing_OS,low,OS is blank
 494,missing_OS,low,OS is blank
-496,missing_OS,low,OS is blank
-503,missing_OS,low,OS is blank
 505,missing_OS,low,OS is blank
-507,missing_OS,low,OS is blank
 520,missing_OS,low,OS is blank
-531,missing_OS,low,OS is blank
-538,missing_OS,low,OS is blank
-541,missing_OS,low,OS is blank
 564,missing_OS,low,OS is blank
-569,missing_OS,low,OS is blank
 575,missing_OS,low,OS is blank
 586,missing_OS,low,OS is blank
-588,missing_OS,low,OS is blank
 589,missing_OS,low,OS is blank
 592,missing_OS,low,OS is blank
-602,missing_OS,low,OS is blank
-607,missing_OS,low,OS is blank
-611,missing_OS,low,OS is blank
-613,missing_OS,low,OS is blank
-616,missing_OS,low,OS is blank
-632,missing_OS,low,OS is blank
-641,missing_OS,low,OS is blank
-642,missing_OS,low,OS is blank
-699,missing_OS,low,OS is blank
-749,missing_OS,low,OS is blank
 752,missing_OS,low,OS is blank
-753,missing_OS,low,OS is blank
 754,missing_OS,low,OS is blank
 755,missing_OS,low,OS is blank
 756,missing_OS,low,OS is blank
 757,missing_OS,low,OS is blank
-758,missing_OS,low,OS is blank
 759,missing_OS,low,OS is blank
-760,missing_OS,low,OS is blank
-761,missing_OS,low,OS is blank
-762,missing_OS,low,OS is blank
 763,missing_OS,low,OS is blank
 764,missing_OS,low,OS is blank
 765,missing_OS,low,OS is blank
 766,missing_OS,low,OS is blank
-767,missing_OS,low,OS is blank
-768,missing_OS,low,OS is blank
-769,missing_OS,low,OS is blank
 770,missing_OS,low,OS is blank
 771,missing_OS,low,OS is blank
-772,missing_OS,low,OS is blank
 773,missing_OS,low,OS is blank
-774,missing_OS,low,OS is blank
