@@ -199,8 +199,8 @@ def display_peptide_details(row: pd.Series):
             <td style="background-color:white; border:1px solid #6A0DAD; padding:4px 8px; line-height:1.2; border-radius: 0 10px 10px 0; ">{disp(row['Existence'])}</td>
             </tr>
             <tr>
-            <td style="background-color:#6a51a3; color:white; padding:4px 8px; line-height:1.2; border-radius: 10px 0 0 10px; ">Monoisotopic Mass</td>
-            <td style="background-color:white; border:1px solid #6A0DAD; padding:4px 8px; line-height:1.2; border-radius: 0 10px 10px 0; ">{disp(row['Monoisotopic Mass'])}</td>
+            <td style="background-color:#6a51a3; color:white; padding:4px 8px; line-height:1.2; border-radius: 10px 0 0 10px; ">Mass (Da)</td>
+            <td style="background-color:white; border:1px solid #6A0DAD; padding:4px 8px; line-height:1.2; border-radius: 0 10px 10px 0; ">{disp(row['Mass (Da)'])}</td>
             </tr>
             <tr>
             <td style="background-color:#6a51a3; color:white; padding:4px 8px; line-height:1.2; border-radius: 10px 0 0 10px; ">Length (a.a.)</td>
@@ -504,7 +504,7 @@ st.markdown(
 st.markdown('<div class="main-search-container">', unsafe_allow_html=True)
 
 # Ensure numeric columns are numeric
-numeric_cols = ['Monoisotopic Mass', 'Length', 'GRAVY', '% Hydrophobic Residue', 'Instability Index Value', 'Isoelectric Point (pI)', 'Net Charge (pH 7.0)', 'Aliphatic Index', 'Boman Index']
+numeric_cols = ['Mass (Da)', 'Length', 'GRAVY', '% Hydrophobic Residue', 'Instability Index Value', 'Isoelectric Point (pI)', 'Net Charge (pH 7.0)', 'Aliphatic Index', 'Boman Index']
 for col in numeric_cols:
     df[col] = pd.to_numeric(df[col], errors='coerce')
 
@@ -541,7 +541,7 @@ st.markdown('<div class="custom-col-container">', unsafe_allow_html=True)
 with col_filter:
     st.markdown('<div class="fill-height">', unsafe_allow_html=True)
 
-    st.markdown('<div class="section-title">Monoisotopic mass (m/z)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Mass (Da))</div>', unsafe_allow_html=True)
     mono_mass_range = st.slider("", 200.0, 16000.0, (200.0, 16000.0), label_visibility="collapsed")
 
     st.markdown('<div class="section-title">Length (amino acids)</div>', unsafe_allow_html=True)
@@ -697,7 +697,7 @@ if technique_selected:
 #    - They're not at their default values, OR
 #    - No right-side filters are active
 default_ranges = {
-    'Monoisotopic Mass': (200.0, 16000.0),
+    'Mass (Da)': (200.0, 16000.0),
     'Length': (2, 150),
     'GRAVY': (-5.0, 5.0),
     '% Hydrophobic Residue': (-1, 100),
@@ -710,7 +710,7 @@ default_ranges = {
 
 # Only apply left slider filters if they differ from defaults OR no right filters are active
 apply_slider_filters = (
-    (mono_mass_range != default_ranges['Monoisotopic Mass']) or
+    (mono_mass_range != default_ranges['Mass (Da)']) or
     (length_range != default_ranges['Length']) or
     (gravy_range != default_ranges['GRAVY']) or
     (hydro_range != default_ranges['% Hydrophobic Residue']) or
@@ -724,7 +724,7 @@ apply_slider_filters = (
 
 if apply_slider_filters:
     df_filtered = df_filtered[
-        df_filtered['Monoisotopic Mass'].between(*mono_mass_range) &
+        df_filtered['Mass (Da)'].between(*mono_mass_range) &
         df_filtered['Length'].between(*length_range) &
         df_filtered['GRAVY'].between(*gravy_range) &
         df_filtered['% Hydrophobic Residue'].between(*hydro_range) &
