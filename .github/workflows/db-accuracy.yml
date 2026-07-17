@@ -7,8 +7,8 @@ name: db-accuracy
 on:
   push:
     paths:
-      - "Assets/20260418_cNPDB.xlsx"
-      - "Assets/20260418_cNPDB.parquet"
+      - "Assets/20260717_cNPDB.xlsx"
+      - "Assets/20260717_cNPDB.parquet"
   workflow_dispatch:
 
 permissions:
