@@ -29,7 +29,7 @@ from utils import peptide_properties as pp
 from utils import sequence_utils as su
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DEFAULT_DB = os.path.join(REPO_ROOT, "Assets", "20260418_cNPDB.xlsx")
+DEFAULT_DB = os.path.join(REPO_ROOT, "Assets", "20260717_cNPDB.xlsx")
 
 # Canonical folders. Anything in outputs/ is machine-generated and safe to
 # overwrite; staging/ holds proposed DB additions awaiting curator sign-off.
