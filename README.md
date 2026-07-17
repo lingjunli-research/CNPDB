@@ -14,7 +14,7 @@ Despite their significance, crustacean neuropeptides remain underrepresented in 
 
 ## TOOLS & FEATURES
 
-The current release of cNPDB (Version 1.0, 2025) contains 1516 curated neuropeptide entries from 30 crustacean species, organized into 76 neuropeptide families. However, these numbers may change as new neuropeptides are reported in future studies and will be updated accordingly on the cNPDB website. Some representative species include Homarus americanus (American Lobster), Callinectes sapidus (Blue Crab), Cancer borealis (Jonah Crab), Carcinus maenas (European green crab), and Panulirus interruptus (California spiny lobster). cNPDB offers various tools that facilitate functional investigation, evolutionary analysis, and synthetic peptide design:
+The current release of cNPDB (Version 1.0, 2025) contains 1595 curated neuropeptide entries from 31 crustacean species, organized into 76 neuropeptide families. However, these numbers may change as new neuropeptides are reported in future studies and will be updated accordingly on the cNPDB website. Some representative species include Homarus americanus (American Lobster), Callinectes sapidus (Blue Crab), Cancer borealis (Jonah Crab), Carcinus maenas (European green crab), and Panulirus interruptus (California spiny lobster). cNPDB offers various tools that facilitate functional investigation, evolutionary analysis, and synthetic peptide design:
 
 - **Custom Search Engine** – Find neuropeptides by sequence, species, families, tissues, post-translational modifications (PTMs), and desired peptide physiological properties, with an option to download the resulted FASTA file.
 - **Sequence Alignment & Homology Search** – Identify conserved motifs and sequence similarities.
