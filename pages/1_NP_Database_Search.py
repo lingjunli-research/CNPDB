@@ -541,7 +541,7 @@ st.markdown('<div class="custom-col-container">', unsafe_allow_html=True)
 with col_filter:
     st.markdown('<div class="fill-height">', unsafe_allow_html=True)
 
-    st.markdown('<div class="section-title">Mass (Da))</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Mass (Da)</div>', unsafe_allow_html=True)
     mono_mass_range = st.slider("", 200.0, 16000.0, (200.0, 16000.0), label_visibility="collapsed")
 
     st.markdown('<div class="section-title">Length (amino acids)</div>', unsafe_allow_html=True)
