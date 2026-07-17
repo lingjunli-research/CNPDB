@@ -124,7 +124,7 @@ Peptide Alignment allows users to align two peptide sequences of interest or aga
 # Load peptide sequence database
 @st.cache_data
 def load_data():
-    return pd.read_parquet("Assets/20260418_cNPDB.parquet")
+    return pd.read_parquet("Assets/20260717_cNPDB.parquet")
 
 df = load_data()
 
