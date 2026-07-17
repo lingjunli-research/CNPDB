@@ -21,11 +21,11 @@ st.markdown("---")
 st.markdown(f"""
 <div style="display: flex; width: 100%;">
         <div style="flex: 1; background-color: #dadaeb; text-align: center; padding: 20px 0;">
-            <h2 style="color:#4a3666; margin-left: 15px;">1516</h2>
+            <h2 style="color:#4a3666; margin-left: 15px;">1595</h2>
             <p style="margin: 0; font-weight: bold; color:#4a3666;">Peptide Entries</p>
         </div>
         <div style="flex: 1; background-color: #eeeeee; text-align: center; padding: 20px 0;">
-            <h2 style="color:#4a3666; margin-left: 15px;">30</h2>
+            <h2 style="color:#4a3666; margin-left: 15px;">31</h2>
             <p style="margin: 0; font-weight: bold; color:#4a3666;">Organisms</p>
         </div>
         <div style="flex: 1; background-color: #dadaeb; text-align: center; padding: 20px 0;">
