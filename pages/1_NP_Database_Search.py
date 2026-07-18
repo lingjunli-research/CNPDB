@@ -150,6 +150,11 @@ def fetch_esmfold_pdb_path(raw_sequence: str):
     except requests.RequestException:
         return None
 
+def get_id_bucket_folder(base_path, cnpdb_id, bucket_size=1000):
+    start = ((cnpdb_id - 1) // bucket_size) * bucket_size + 1
+    end = start + bucket_size - 1
+    return f"{base_path} {start}_{end}"
+
 def img_html(path):
     """Return a base64 <img> tag filling 100% width of its container."""   
     if not os.path.exists(path):
@@ -331,10 +336,8 @@ def display_peptide_details(row: pd.Series):
           unsafe_allow_html=True
         )
 
-        if cNPDB_id <= 1000:
-            folder = "Assets/3D Structure AlphaFold 1_1000"
-        else:
-            folder = "Assets/3D Structure AlphaFold 1001_2000"
+        # display_peptide_details — AlphaFold
+        folder = get_id_bucket_folder("Assets/3D Structure AlphaFold", cNPDB_id)
         
         cif_file = os.path.join(folder, f"3D cNP {cNPDB_id}.cif")
         if os.path.exists(cif_file):
@@ -873,11 +876,8 @@ if len(df_filtered) > 0:
                             cnp_id = int(row["cNPDB ID"])
  
                             # Determine AlphaFold folder
-                            if cnp_id <= 1000:
-                                alphafold_folder = "Assets/3D Structure AlphaFold 1_1000"
-                            else:
-                                alphafold_folder = "Assets/3D Structure AlphaFold 1001_2000"
- 
+                            alphafold_folder = get_id_bucket_folder("Assets/3D Structure AlphaFold", cnp_id)
+
                             cif_path = os.path.join(alphafold_folder, f"3D cNP {cnp_id}.cif")
                             if os.path.exists(cif_path):
                                 zipf.write(cif_path, arcname=f"AlphaFold_3D_Structures/{os.path.basename(cif_path)}")
